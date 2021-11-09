@@ -1,0 +1,4 @@
+@keyframes example{
+    from{background-color: white;}
+    to{background-color: black;}}
+    div{width:100px;height:100px; background-color: red;position:relative;animation:  duration:4s;}

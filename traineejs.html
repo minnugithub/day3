@@ -1,0 +1,23 @@
+<!DOCTYPE html5>
+<html>
+    <head>
+        <title>index page</title>
+        <meta name="viewport" content="width=device-width ; initial scale=1.0">
+    </head>
+    <body>
+        <h id="ttt"> </h>
+        
+        <script>
+            const trainee={TraineeName:'  ANNA',
+            Education:"  B.TECH ",Location:"KERALA",
+            details: function(){ 
+                return " NAME: "  +this.TraineeName     
+                +" EDUCATION:  "+this.Education+ "LOCATION:  "  +this.Location
+              
+            }
+            
+        };
+        let data=trainee.details();
+            document.getElementById("ttt").innerHTML=data;
+        </script>
+    </body>

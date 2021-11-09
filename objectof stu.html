@@ -1,0 +1,31 @@
+<!DOCTYPE html5>
+<html>
+    <head>
+        <title>object - student details></title>
+        <meta name="viewport" content="width=device-width ; initial scale=1.0">
+    </head>
+    <body>
+        <h><b> STUDENT DETAILS</b></h><br>
+        <h id="t"> </h>
+        <br>
+        <h> TOTAL MARKS : </h>
+        <h id=tt></h>
+        
+        <script>
+            
+           
+            const student={Name:'    ANNA',
+            ROLL_NO: 5, MATHS : "80",
+            ENG: "90",SCIENCE:"95",
+            details: function(){ 
+                return " NAME  : "  +this.Name  +"       ROLL NO: " +this.ROLL_NO +
+                "        MATHS MARKS :"+ this.MATHS + "      ENGLISH MARKS:"  +
+                this.ENG +"       SCIENCE MARKS:" + this.SCIENCE }
+                   };
+
+            let data=student.details();
+            let y=80+90+95;
+            document.getElementById("t").innerHTML=data;
+            document.getElementById("tt").innerHTML=y;
+        </script>
+    </body>

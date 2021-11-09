@@ -1,0 +1,58 @@
+<!DOCTYPE html5>
+<html>
+    <head>
+        <title>string fns</title>
+        <meta name="viewport" content="width=device-width ; initial scale=1.0">
+    </head>
+    <body>
+        <h ><b> Different String Functions</b></h>
+        <br>
+        <br>
+        <h> string 1:</h>
+        <h id="t"><b></b> </h><br>
+        <h> string 2:</h>
+        <h id="tt"><b></b> </h><br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h><b>Length</b><br> string 1 length :</h>
+        <h id="dd"> </h><br>
+        
+        <h><b> Slicing</b><br> string 2 slice 15-41 :</h>
+        <h id="ss"> </h><br>
+       
+        <h><b> Substr</b><br>string 2 substring 15-41 :</h>
+        <h id="sss"></h><br>
+        
+        <h><b>Substr</b><br>string 2 substr from 8 :</h>
+        <h id="ssss"></h><br>
+       
+        <h> <b>Replace</b><br>string 2 replace world by home :</h>
+        <h id="re"></h><br>
+      
+        <h><b> concatnate</b><br> string 1 & string 2 :</h>
+        <h id="ccat"></h><br>
+
+        <script>
+           let st1="Curiosity about life in all of its aspects, I think, is still the secret of great creative people.";
+            let st2="Have a great day";
+
+            document.getElementById("t").innerHTML=st1;
+            document.getElementById("tt").innerHTML=st2;
+
+            let d= st1.length;
+            let s1=st1.slice(15,41);
+            let s2=st1.substring(15,41);
+            let s3=st1.substr(8);
+            let con=st1.concat(" "+st2);
+            let nst2= st2.replace("great","good");
+            document.getElementById("dd").innerHTML=d;
+            document.getElementById("ss").innerHTML=s1;
+            document.getElementById("sss").innerHTML=s2;
+            document.getElementById("ssss").innerHTML=s3;
+            document.getElementById("re").innerHTML=nst2;
+            document.getElementById("ccat").innerHTML=con;
+        </script>
+    </body>
+</html>
